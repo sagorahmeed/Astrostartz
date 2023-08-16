@@ -1,0 +1,100 @@
+/* font family */
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,500;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Nunito:wght@500;600;700&family=Open+Sans:wght@400;500;600;700&family=Rubik:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Kalam:wght@300;400;700&family=Prompt:wght@300;400;500;600;700;800;900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.banner-wrapper {
+  background-image: url('/dist/image/astrostarz-bg.jpg');
+  height: 100%;
+  width: 100%;
+}
+.astro-container {
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+  padding: 80px 20px;
+}
+
+/* image spinner */
+
+/* image hover animation */
+.wrap {
+  overflow: hidden;
+  position: relative;
+  border-radius: 999px;
+}
+.wrap * {
+  transition: 0.5s;
+}
+.wrap img {
+  position: relative;
+}
+.wrap .caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  color: #fff;
+}
+.wrap:hover img {
+  transform: scale(1.5);
+}
+.wrap:hover .caption {
+  opacity: 1;
+}
+
+/* animation for card iamge */
+.bounce {
+  animation: bounce 4s ease infinite;
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-8px);
+  }
+  60% {
+    transform: translateY(-8px);
+  }
+}
+.bounce-reverse {
+  animation: bounce-reverse 4s ease infinite;
+}
+@keyframes bounce-reverse {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(8px);
+  }
+  60% {
+    transform: translateY(8px);
+  }
+}
+
+.spin {
+  animation: spin 100s infinite linear;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
