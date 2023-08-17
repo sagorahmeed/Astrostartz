@@ -104,7 +104,7 @@
 }
 
 .card-shadow {
-  box-shadow: 0px 0px 13px 1px #80808054;
+  box-shadow: 0 0 16px 0px #80808021;
   transition: 0.2s ease-in;
 }
 .card-shadow:hover {
@@ -146,7 +146,6 @@
   transition: 0.5s;
   background-size: 200% auto;
   color: white;
-  /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
   box-shadow: 0 0 20px #eee;
   border-radius: 999px;
 }
@@ -166,4 +165,18 @@
     #fbdb4c87 51%,
     #049f7172 100%
   );
+}
+
+.svg-delay {
+  animation: moveRightToLeft 5s linear infinite;
+}
+
+@keyframes moveRightToLeft {
+  0%,
+  100% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-15px);
+  }
 }
