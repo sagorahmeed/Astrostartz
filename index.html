@@ -12,17 +12,15 @@
       <div class="">
         <div class="banner-wrapper">
           <div class="astro-container">
-            <div class="md:flex items-center py-[4rem]">
+            <div class="banner-inner">
               <div class="">
-                <div class="pb-[2rem]">
-                  <h1
-                    class="heading font-rubik text-white text-left md:text-[3rem] text-[2rem] font-bold max-w-[50rem] capitalize"
-                  >
-                    <span class="relative">
+                <div class="banner-information">
+                  <h1 class="heading banner-header">
+                    <span class="banner-header-span">
                       accurate
                       <img
                         src="/dist/arrow-shyape.svg"
-                        class="absolute bottom-[-1.5rem] left-0"
+                        class="banner-header-shape"
                       />
                     </span>
                     <span class="heading-gradient">
@@ -30,9 +28,7 @@
                     </span>
                     for your future
                   </h1>
-                  <p
-                    class="max-w-[40rem] w-full text-left pt-[1rem] font-nunito text-white"
-                  >
+                  <p class="banner-title">
                     Unlock your future with Astrostartz. Accurate astrological
                     predictions for love, marriage, education, business, and
                     wealth. Expertly designed to illuminate your path. Explore
@@ -40,36 +36,24 @@
                   </p>
                 </div>
                 <div class="">
-                  <div class="sm:mr-space12 sm:flex items-center">
-                    <div
-                      class="sm:flex items-center sm:space-y-0 space-y-space12"
-                    >
+                  <div class="banner-button-info">
+                    <div class="banner-button-wrapper">
                       <a
                         href="https://sandbox.astrostarz.xyz/subscribe?page=4062"
-                        class=""
+                        class="btn btn-3 banner-button-left"
                         target="_blank"
                       >
-                        <button
-                          class="btn btn-3 text-white font-bold sm:w-[20rem] w-full rounded-full h-[4rem] font-rubik text-2xl mt-space12 hover:opacity-75 transition-all duration-300"
-                        >
-                          Start now
-                        </button>
+                        Start now
                       </a>
                       <a
                         href="https://sandbox.astrostarz.xyz/subscribe?page=4062"
-                        class="sm:ml-space12"
+                        class="banner-button-right"
                         target="_blank"
                       >
-                        <button
-                          class="bg-transparent text-[#ff7010] border border-[#ff7010] uppercase hover:bg-[#ff7010] hover:text-white font-bold sm:w-[15rem] w-full rounded-full h-[4rem] font-rubik text-2xl mt-space12 hover:opacity-75 transition-all duration-300"
-                        >
-                          Free Trial
-                        </button>
+                        Free Trial
                       </a>
                     </div>
-                    <div
-                      class="translate-x-[-56px] svg-delay md:block hidden ml-[1.5rem]"
-                    >
+                    <div class="svg-delay banner-btn-arrow">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="149"
@@ -96,11 +80,11 @@
                   </div>
                 </div>
               </div>
-              <div class="md:mt-0 mt-space40">
-                <div class="overflow-hidden">
+              <div class="banner-right-img">
+                <div class="banner-right-img-wrapper">
                   <img
                     src="/dist/image/banner_image.png"
-                    class="xs:max-w-[30rem] lg:max-w-[50rem] mx-auto spin w-full"
+                    class="spin banner-right-img-inner"
                   />
                 </div>
               </div>
@@ -108,178 +92,149 @@
           </div>
         </div>
         <!-- <div class="bg-[#031d2e]"></div> -->
-        <div class="bg-[#f6f6f67d]">
+        <div class="feature-wrapper">
           <div class="astro-container">
             <!-- feature blog -->
             <div
               class="max-w-[50rem] mx-auto flex items-center gap-space5 justify-center py-space16 pb-space40"
             >
-              <div class="w-[5rem] h-[.1rem] gradient-line"></div>
-              <div class="w-[2rem] h-[.1rem] gradient-line"></div>
-              <div class="w-[5rem] h-[.1rem] gradient-line"></div>
+              <div class="span-line-1 gradient-line"></div>
+              <div class="span-line-2 gradient-line"></div>
+              <div class="span-line-3 gradient-line"></div>
             </div>
             <div>
-              <div class="pb-[2rem]">
-                <h1
-                  class="heading font-rubik text-center md:text-[3rem] text-[2rem] font-bold"
-                >
-                  <span class="relative">
+              <div class="feature-innne">
+                <h1 class="heading feature-header">
+                  <span class="feature-header-span">
                     Discover
                     <img
                       src="/dist/arrow-shyape.svg"
-                      class="absolute bottom-[-1.5rem] left-0"
+                      class="feature-header-span-shape"
                     />
                     <img
                       src="/dist/dot-shape.svg"
-                      class="absolute bottom-[-1rem] left-[-10px]"
+                      class="feature-header-span-ellips"
                     />
                   </span>
                   <span class="heading-gradient">Astrostartz</span>
                   Your Celestial Path
                 </h1>
-                <p
-                  class="max-w-[50rem] w-full mx-auto text-center pt-[1rem] font-nunito"
-                >
+                <p class="feature-title">
                   Unlock your future with Astrostartz. Accurate astrological
                   predictions for love, marriage, education, business, and
                   wealth. Expertly designed to illuminate your path. Explore
                   Astrostartz now.
                 </p>
               </div>
-              <div
-                class="lg:grid lg:grid-cols-4 sm:grid xs:grid-cols-2 sm:space-y-0 space-y-space40 gap-space24 xs:mt-0 md:pt-[8rem] pt-[4rem] relative"
-              >
-                <img
-                  src="/dist/frame.svg"
-                  class="absolute top-[-0rem] left-0 rotate-[220deg] z-10"
-                />
-                <div class="bg-white card-shadown rounded-lg h-max card-shadow">
+              <!-- card -->
+              <div class="cards feature-card-wrapper">
+                <img src="/dist/frame.svg" class="feature-card-wrapper-arrow" />
+                <!-- card 1 -->
+                <div class="card-shadown cards_item card-shadow">
                   <div class="">
-                    <div
-                      class="wrap w-full mx-auto rounded-tr-lg rounded-tl-lg"
-                    >
+                    <div class="wrap card-item-header">
                       <img
                         src="/dist/image/card/dating.jpg"
-                        class="h-[14rem] w-full mx-auto scale-[1] group-hover:scale-[1.15] transition-all duration-300 ease-in img-fluid rounded-tr-lg rounded-tl-lg"
+                        class="card-item-header-img"
                         alt="astrostartz wedding"
                       />
                       <div class="caption">
-                        <h1
-                          class="font-nunito text-2xl text-[#d54a58] tracking-[0.015em] mt-space12 bg-white px-space8 rounded-sm"
-                        >
+                        <h1 class="card-item-header-badge">
                           Dating
                         </h1>
                       </div>
                     </div>
                   </div>
-                  <div class="px-space16 pb-space16">
-                    <h1
-                      class="font-rubik text-2xl text-black font-medium tracking-[0.015em] pt-space16"
-                    >
-                    Dating
+                  <div class="">
+                    <h1 class="card-item-footer-title">
+                      Dating
                     </h1>
-                    <p
-                      class="font-nunito text-[1rem] text-gray tracking-[0.0015em] mt-space12 w-full mx-auto"
-                    >
+                    <p class="card-item-footer-desc">
                       Want a happy married life? Our matchmaking analysis can
                       predict what's right for you.
                     </p>
                   </div>
                 </div>
-                <div class="bg-white card-shadown rounded-lg h-max card-shadow">
+
+                <!-- card 2 -->
+
+                <div class="card-shadown cards_item card-shadow">
                   <div class="">
-                    <div
-                      class="wrap w-full mx-auto rounded-tr-lg rounded-tl-lg"
-                    >
+                    <div class="wrap card-item-header">
                       <img
                         src="/dist/image/card/book-with-apple.jpg"
-                        class="h-[14rem] w-full mx-auto scale-[1] group-hover:scale-[1.15] transition-all duration-300 ease-in img-fluid rounded-tr-lg rounded-tl-lg"
+                        class="card-item-header-img"
                         alt="astrostartz wedding"
                       />
                       <div class="caption">
-                        <h1
-                          class="font-nunito text-2xl text-[#d54a58] tracking-[0.015em] mt-space12 bg-white px-space8 rounded-sm"
-                        >
-                        Education
+                        <h1 class="card-item-header-badge">
+                          Education
                         </h1>
                       </div>
                     </div>
                   </div>
-                  <div class="px-space16 pb-space16">
-                    <h1
-                      class="font-rubik text-2xl text-black font-medium tracking-[0.015em] pt-space16"
-                    >
+                  <div class="">
+                    <h1 class="card-item-footer-title">
                       Education
                     </h1>
-                    <p
-                      class="font-nunito text-[1rem] text-gray tracking-[0.0015em] mt-space12 w-full mx-auto"
-                    >
+                    <p class="card-item-footer-desc">
                       Higher studies on your mind? We can be your guide to
                       ensure you get the best education.
                     </p>
                   </div>
                 </div>
 
-                <div class="bg-white card-shadown rounded-lg h-max card-shadow">
+                <!-- card 3 -->
+
+                <div class="card-shadown cards_item card-shadow">
                   <div class="">
-                    <div
-                      class="wrap w-full mx-auto rounded-tr-lg rounded-tl-lg"
-                    >
+                    <div class="wrap card-item-header">
                       <img
                         src="/dist/image/card/business-performance.jpeg"
-                        class="h-[14rem] w-full mx-auto scale-[1] group-hover:scale-[1.15] transition-all duration-300 ease-in img-fluid rounded-tr-lg rounded-tl-lg"
+                        class="card-item-header-img"
                         alt="astrostartz wedding"
                       />
                       <div class="caption">
-                        <h1
-                          class="font-nunito text-2xl text-[#d54a58] tracking-[0.015em] mt-space12 bg-white px-space8 rounded-sm"
-                        >
+                        <h1 class="card-item-header-badge">
                           Business
                         </h1>
                       </div>
                     </div>
                   </div>
-                  <div class="px-space16 pb-space16">
-                    <h1
-                      class="font-rubik text-2xl text-black font-medium tracking-[0.015em] pt-space16"
-                    >
+                  <div class="">
+                    <h1 class="card-item-footer-title">
                       Business
                     </h1>
-                    <p
-                      class="font-nunito text-[1rem] text-gray tracking-[0.0015em] mt-space12 w-full mx-auto"
-                    >
-                    Contemplating furthering your education? Allow us to act as your consultant.
+                    <p class="card-item-footer-desc">
+                      Contemplating furthering your education? Allow us to act
+                      as your consultant.
                     </p>
                   </div>
                 </div>
-                <div class="bg-white card-shadown rounded-lg h-max card-shadow">
+
+
+                 <!-- card 4 -->
+
+                 <div class="card-shadown cards_item card-shadow">
                   <div class="">
-                    <div
-                      class="wrap w-full mx-auto rounded-tr-lg rounded-tl-lg"
-                    >
+                    <div class="wrap card-item-header">
                       <img
                         src="/dist/image/card/doller.jpeg"
-                        class="h-[14rem] w-full mx-auto scale-[1] group-hover:scale-[1.15] transition-all duration-300 ease-in img-fluid rounded-tr-lg rounded-tl-lg"
+                        class="card-item-header-img"
                         alt="astrostartz wedding"
                       />
                       <div class="caption">
-                        <h1
-                          class="font-nunito text-2xl text-[#d54a58] tracking-[0.015em] mt-space12 bg-white px-space8 rounded-sm"
-                        >
+                        <h1 class="card-item-header-badge">
                           Wealth
                         </h1>
                       </div>
                     </div>
                   </div>
-                  <div class="px-space16 pb-space16">
-                    <h1
-                      class="font-rubik text-2xl text-black font-medium tracking-[0.015em] pt-space16"
-                    >
+                  <div class="">
+                    <h1 class="card-item-footer-title">
                       Wealth
                     </h1>
-                    <p
-                      class="font-nunito text-[1rem] text-gray tracking-[0.0015em] mt-space12 w-full mx-auto"
-                    >
+                    <p class="card-item-footer-desc">
                       Are you suffering from monetary losses? Horoscope doshas?
                       Get the right solution here!
                     </p>
