@@ -8,11 +8,12 @@
 @tailwind components;
 @tailwind utilities;
 
-/* font-family: 'Rubik', sans-serif; */
-/* font-family: 'Nunito', sans-serif; */
-
+* {
+  margin: 0;
+  padding: 0;
+}
 .banner-wrapper {
-  background-image: url('/dist/image/astrobg.jpg');
+  background-image: url('/public/image/astrobg.jpg');
   height: 100%;
   width: 100%;
 }
@@ -20,7 +21,10 @@
   max-width: 1440px;
   width: 100%;
   margin: auto;
-  padding: 80px 20px;
+  padding: 80px 0;
+}
+.banner-inner {
+  padding: 0 20px;
 }
 .banner-information {
   padding-bottom: 20px;
@@ -33,13 +37,14 @@
   font-weight: bold;
   max-width: 700px;
   text-transform: capitalize;
+  line-height: 50px;
 }
 .banner-header-span {
   position: relative;
 }
 .banner-header-shape {
   position: absolute;
-  bottom: -15px;
+  bottom: -30px;
   left: 0;
 }
 .banner-title {
@@ -64,6 +69,7 @@
   margin-top: 12px;
   min-width: 280px;
   transition: all 0.3s ease-in;
+  text-decoration: none;
 }
 .banner-button-left:hover {
   opacity: 0.9;
@@ -88,6 +94,7 @@
   transition: all 0.3s ease-in;
   color: #ff7010;
   margin-left: 0;
+  text-decoration: none;
 }
 .banner-button-right:hover {
   opacity: 0.9;
@@ -109,24 +116,39 @@
 .banner-right-img-inner {
   margin: auto;
   width: 100%;
+  margin: auto;
+  display: flex;
 }
 .banner-right-img-inner {
   max-width: 300px;
+  margin: auto;
 }
 .feature-wrapper {
   background-color: #f6f6f67d;
 }
+.span-line-wrapper {
+  max-width: 133px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  padding: 16px;
+  padding-bottom: 40px;
+}
 .span-line-1 {
   width: 50px;
   height: 1px;
+  margin: auto;
 }
 .span-line-2 {
   width: 20px;
   height: 1px;
+  margin: auto;
 }
 .span-line-3 {
   width: 50px;
   height: 1px;
+  margin: auto;
 }
 .feature-innne {
   padding-bottom: 20px;
@@ -146,7 +168,7 @@
 }
 .feature-header-span-shape {
   position: absolute;
-  bottom: -15px;
+  bottom: -24px;
   left: 0;
 }
 .feature-header-span-ellips {
@@ -203,7 +225,7 @@
 }
 @media screen and (max-width: 767px) {
   .astro-container {
-    padding: 40px 20px;
+    padding: 40px 0;
   }
 }
 
@@ -346,6 +368,7 @@
 
   .banner-right-img-inner {
     max-width: 300px;
+    margin: auto;
   }
 
   .feature-header {
@@ -354,6 +377,12 @@
 }
 
 @media screen and (min-width: 768px) {
+  .banner-inner {
+    display: flex;
+    align-items: center;
+    padding: 40px 20px;
+    justify-content: space-between;
+  }
   .banner-btn-arrow {
     display: block;
     transform: translateX(-56px);
@@ -364,6 +393,7 @@
 @media screen and (min-width: 1024px) {
   .banner-header {
     font-size: 60px;
+    line-height: 76px;
   }
 
   .banner-button-wrapper {
@@ -373,6 +403,22 @@
   .banner-button-right {
     margin-left: 12px;
   }
+
+  .banner-header-shape {
+    bottom: -18px;
+  }
+  .feature-header-span-shape {
+    bottom: -15px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .banner-right-img-inner {
+    max-width: 600px;
+  }
+  .banner-right-img {
+    margin-top: 0;
+  }
   .feature-card-wrapper-arrow {
     display: block;
     position: absolute;
@@ -380,21 +426,6 @@
     left: 0;
     transform: rotate(200deg);
     z-index: 10;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .banner-inner {
-    display: flex;
-    align-items: center;
-    padding: 40px 0;
-    justify-content: space-between;
-  }
-  .banner-right-img-inner {
-    max-width: 600px;
-  }
-  .banner-right-img {
-    margin-top: 0;
   }
 }
 
@@ -412,7 +443,7 @@
 
 .cards_item {
   padding: 1rem;
-  width: 23%;
+  width: 21%;
   position: relative;
   background-color: white;
   border-radius: 10px;
@@ -420,21 +451,25 @@
 
 @media (max-width: 1024px) {
   .cards_item {
-    width: 47%;
+    width: 43%;
   }
 }
 
 @media (max-width: 991px) {
   .cards_item {
-    width: 47%;
+    width: 41%;
   }
 }
 
 @media (max-width: 575px) {
   .cards_item {
-    width: 100%;
+    width: 80%;
+    margin: auto;
   }
   .cards {
     flex-direction: column;
+  }
+  .feature-header-span-shape {
+    display: none;
   }
 }
